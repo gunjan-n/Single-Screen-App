@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cup_of_coffee_with_beans" />
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Hideout Cafe"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:padding="20dp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Details"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFEB3B"
+        android:layout_below="@id/name_text_view"
+        android:paddingLeft="16dp"
+        android:paddingTop="30dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/call_image"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_below="@id/details"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/call" />
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234567890"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#03DAC5"
+        android:layout_toRightOf="@id/call_image"
+        android:layout_below="@id/details"
+        android:paddingLeft="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/email_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/call_image"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/email" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num"
+        android:layout_toRightOf="@id/email_image"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="xyz@gmail.com"
+        android:textColor="#03DAC5"
+        android:textSize="26sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="73dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/email_image"
+        android:layout_marginLeft="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/location" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-13dp"
+        android:layout_toRightOf="@id/location_image"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="16dp"
+        android:paddingTop="10dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:text="Hey,this is for the project.No such place exist(maybe?)"
+        android:textColor="#03DAC5"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The coffee, the music and the smile of someone who cares, it's a fragment of heaven, a chance to enjoy company and to start to want more."
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#E91E63"
+        android:padding="8dp"
+        android:layout_below="@id/location_image"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/operating_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operating Hours"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFEB3B"
+        android:layout_below="@id/quote"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Everyday : 6am-11pm"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#03DAC5"
+        android:layout_below="@id/operating_hours"
+        android:layout_marginLeft="20dp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
